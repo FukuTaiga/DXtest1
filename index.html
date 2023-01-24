@@ -2,35 +2,76 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <!-- aframeフレームワークのjsを読み込む -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <script src="https://aframe.io/releases/1.0.2/aframe.min.js"></script>
   <script src="./js/aframe-ar.js"></script>
   <script src="./js/aframe-extras.js"></script>
   
   <title>A-Frame</title>
+  
+  <link rel="stylesheet"href="mystyle.css">
+
+    <style>
+        .parent ul{
+        display: none;
+                  }
+        .active {
+        background-color: rgb(172, 228, 244);
+                }
+        .active ul {
+        display: block;
+                   }
+    </style>
+  
 </head>
-<body style='margin: 0; overflow: hidden;'>
-    <a-scene>
+<body>
+
+  <header>
+    <h1><font color=#000000>AR　テスト</font></h1>
+  </header>
+
+   <html>
     
-        <a-assets>
-        <a-asset-item id="model" src="./prot/object1/prot.gltf"></a-asset-item>
-        </a-assets>
-        
-        <a-marker preset="hiro">
-        
-        <a-entity gltf-model="#model" scale="1 1 1" rotation="0 0 0" position="0 0.5 0" animation-mixer="loop:pingpong" ></a-entity>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8" />
+        <meta name='viewport' content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+    </head>
     
-        </a-marker>
+      <body style='margin: 0; overflow: hidden;'>
+    
+        <a-scene>
+    
+          <a-assets>
+          <a-asset-item id="model" src="./prot/object1/prot.gltf"></a-asset-item>
+          </a-assets>
+        
+            <a-marker preset="hiro">
+        
+              <a-entity gltf-model="#model" scale="1 1 1" rotation="0 0 0" position="0 0.5 0" animation-mixer="loop:pingpong" ></a-entity>
+    
+            </a-marker>
 
     <!-- ⑥ カメラを追加 -->
-    <a-entity camera></a-entity>
-</a-scene>
+          <a-entity camera></a-entity>
+        </a-scene>
 
-<main>
+      </body>
+
+    </html>
+
+  <main>
     <h2>
         <a href="https://aramakimakihi.github.io/test/" target="_blank">次のゲーム</a>
     </h2>
-</main>
+  </main>
+
+  <footer>
+        近畿大学工学部情報学科教育情報システム研究室
+  </footer>
 
 </body>
+
 </html>
