@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AR テスト</title>
   <script src="https://aframe.io/releases/1.0.2/aframe.min.js"></script>
   <script src="./js/aframe-ar.js"></script>
   <script src="./js/aframe-extras.js"></script>
-  
-  <title>A-Frame</title>
+  <script src="js/aframe-text-geometry-component.min.js"></script>
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
 </head>
 
@@ -13,7 +16,7 @@
     
       <body style='margin: 0; overflow: hidden;'>
     
-        <a-scene>
+        <a-scene embedded arjs="debugUIEnabled:false;"  renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
     
           <a-assets>
           <a-asset-item id="model" src="./prot/object1/prot.gltf"></a-asset-item>
