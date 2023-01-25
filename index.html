@@ -20,7 +20,7 @@
         <a-scene embedded arjs="debugUIEnabled:false;"  renderer="gammaOutput: true;" vr-mode-ui="enabled: false">
     
           <a-assets>
-          <a-asset-item id="model" src="./prot/object1/prot.gltf"></a-asset-item>
+          <a-asset-item id="model" src="./prot/object1/iphone.gltf"></a-asset-item>
           </a-assets>
         
             <a-marker preset="hiro">
@@ -33,8 +33,18 @@
           <a-entity camera></a-entity>
         </a-scene>
 
+        <div style="position: fixed; bottom: 100px;">
+          <input type="button" onclick="location.href='https://fukutaiga.github.io/DXtest2/'" value="test">
+        </div>
+        
+        <div style="position: fixed; bottom: 50px;">
+          <input type="button" onclick="location.href='https://fukutaiga.github.io/DXtest2/'" value="test2">
+        </div>
+        
         <div style="position: fixed; bottom: 150px;">
-          <input type="button" onclick="window.open('https://fukutaiga.github.io/test1/')" value="test">
+          <a href="https://fukutaiga.github.io/DXtest2/">
+            <img src="./prot/img/houkou.PNG" alt="加速度センサー" width="75" height="75">
+          </a>
         </div>
 
       </body>
