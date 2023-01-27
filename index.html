@@ -2,6 +2,21 @@
 <html lang="ja">
 <head>  
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <link rel="stylesheet"href="mystyle.css">
+  
+  <style>
+    .parent ul{
+      display: none;
+    }
+    .active {
+      background-color: rgb(172, 228, 244);
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+  
   <title>AR テスト</title>
   
   <script src="https://aframe.io/releases/1.0.2/aframe.min.js"></script>
@@ -34,42 +49,56 @@
         </a-scene>
 
     <!-- 左寄せ -->
+    <main>
+      <hidari1>
         <div style="position: fixed; bottom: 150px;">
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/kasokudosensa.PNG" alt="加速度センサー" width="75" height="75">
           </a>
         </div>
-        
+      </hidari1>
+      
+      <hidari2>
         <div style="position: fixed; bottom: 100px;">
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/zyairosensa.PNG" alt="ジャイロセンサー" width="75" height="75">
           </a>
         </div>
-        
+      </hidari2>
+      
+      <hidari3>
         <div style="position: fixed; bottom: 50px;">
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/zikisensa.PNG" alt="磁気センサー" width="75" height="75">
           </a>
         </div>
+      </hidari3>
         
     <!-- 右寄せ -->
+      <migi1>
         <div style="position: fixed; bottom: 150px;" align=”right”>
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/seitaisensa.PNG" alt="生体認証センサー" width="75" height="75">
           </a>
         </div>
+      </migi1>
         
+      <migi2>
         <div style="position: fixed; bottom: 100px;" align=”right”>
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/gpssensa.PNG" alt="GPSセンサー" width="75" height="75">
           </a>
         </div>
-
+      </migi2>
+      
+      <migi3>
         <div style="position: fixed; bottom: 50px;" align=”right”>
           <a href="https://fukutaiga.github.io/DXtest2/">
             <img src="./prot/img/hikarisensa.PNG" alt="光センサー" width="75" height="75">
           </a>
         </div>
+      </migi3>
+    </main>
         
 </body>
 
